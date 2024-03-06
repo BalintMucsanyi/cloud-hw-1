@@ -8,4 +8,5 @@ docker build --no-cache -f Dockerfile_alpine -t my-alpine-image .
 docker run --rm -d --network my-network --name my-nginx-container my-nginx-image
 docker run --rm -itd --network my-network --name my-alpine-container my-alpine-image
 
+echo "Executing curl command from alpine."
 docker exec my-alpine-container curl -s my-nginx-container
