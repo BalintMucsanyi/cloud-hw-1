@@ -1,6 +1,6 @@
 #!/bin/bash
 
-docker network create my-network --subnet 198.69.69.0/24
+docker network create my-network --subnet 192.69.69.0/24
 
 docker build --no-cache -f Dockerfile_nginx  -t my-nginx-image .
 docker build --no-cache -f Dockerfile_alpine -t my-alpine-image .
